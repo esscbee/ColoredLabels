@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="ColoredLabels" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-KM-HDT">
+                                <rect key="frame" x="73" y="20" width="458" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qSa-KM-HDT" secondAttribute="trailing" constant="10" id="MdN-st-Ofs"/>
+                            <constraint firstItem="qSa-KM-HDT" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="10" id="c57-Do-iy6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="qSa-KM-HDT" id="pXg-Ai-aKv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="375"/>
+        </scene>
+    </scenes>
+</document>
